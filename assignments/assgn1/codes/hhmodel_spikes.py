@@ -13,7 +13,7 @@ def find_peaks(vhist):
 	threshold = 10
 	npeaks = 0
 	for i in range(vhist.size-1):
-		if (vhist[i] >= 10) and (vhist[i] > vhist[i+1]) and (vhist[i] > vhist[i-1]):
+		if (vhist[i] >= threshold) and (vhist[i] > vhist[i+1]) and (vhist[i] > vhist[i-1]):
 			npeaks += 1
 	return	npeaks
 
